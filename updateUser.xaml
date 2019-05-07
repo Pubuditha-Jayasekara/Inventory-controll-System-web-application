@@ -1,0 +1,71 @@
+﻿<Page x:Class="Secrets_Application_2019.updateUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="350"
+	Title="updateUser" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" RenderTransformOrigin="0.5,0.501">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17*"></ColumnDefinition>
+                <ColumnDefinition Width="33*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="User Image"  Width="100" Grid.Row="0" Grid.Column="0" Margin="10,90,0,89" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="User ID" Width="50" Grid.Row="1" Grid.Column="0" Margin="10,11,0,12" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="User Name" Width="100" Grid.Row="2" Grid.Column="0" Margin="10,12,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="Employee Name" Width="100"  Grid.Row="3" Grid.Column="0" Margin="10,11,0,12" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="Branch"  Width="100" Grid.Row="4" Grid.Column="0" Margin="10,12,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="Password" Width="100"  Grid.Row="5" Grid.Column="0" Margin="10,11,0,12" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="Confirm Password"  Width="100" Grid.Row="6" Grid.Column="0" Margin="10,12,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+
+
+            <TextBox x:Name="txtImage"  Width="200" Grid.Row="0" Grid.Column="1" Margin="10,159,0,18" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Height="18"></TextBox>
+            <TextBox x:Name="txtId"  Width="200" Grid.Row="1" Grid.Column="1" Margin="10,11,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Height="18"></TextBox>
+            <TextBox x:Name="txtName"  Width="200" Grid.Row="2" Grid.Column="1" Margin="10,10,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></TextBox>
+            <TextBox x:Name="txtEmployeeName" Width="200" Grid.Row="3" Grid.Column="1" Margin="10,11,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></TextBox>
+            <TextBox x:Name="txtBranch"  Width="200" Grid.Row="4" Grid.Column="1" Margin="10,10,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></TextBox>
+            <PasswordBox x:Name="txtpassword" Width="116" Grid.Row="5" Grid.Column="1" Margin="10,11,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></PasswordBox>
+            <PasswordBox x:Name="txtconfirmpassword"  Width="116" Grid.Row="6" Grid.Column="1" Margin="10,10,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></PasswordBox>
+
+
+            <Image HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="100" Grid.Column="1" Margin="10,0,0,0"/>
+
+            <Image x:Name="userIMage" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="44,14,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button Grid.Row="0" Content="select Image" Width="80" Height="25" Margin="115,119,36,51" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_3" Grid.Column="1" />
+
+
+
+        </Grid>
+
+        <Button Grid.Row="2" Content="cancel" Width="60" Height="26" Margin="264,27,26,32" VerticalAlignment="Center"  HorizontalAlignment="Center" Click="Button_Click_2"/>
+        <Button Grid.Row="2" Content="Update" Width="60" Height="25" Margin="134,27,156,33" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1" />
+        <Button Grid.Row="2" Content="Clear" Width="60" Height="26" Margin="199,27,91,32" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click" />
+
+        <Button  x:Name="btnSearch" Grid.Row="0" Content="Search" Width="60" Height="26" Margin="235,32,55,28" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnSearch_Click"  />
+        <TextBlock Text="Search by name" Width="100" Grid.Row="0" Grid.Column="0" Margin="10,22,0,19" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtSearch"  Width="120" Grid.Row="0" Margin="110,36,0,32" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    </Grid>
+
+</Page>

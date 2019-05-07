@@ -1,0 +1,47 @@
+﻿<Page x:Class="Secrets_Application_2019.Invoice"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="400"
+	Title="Invoice" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="Item ID" Grid.Row="0" Margin="25,16,0,15" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <TextBox x:Name="txtItemID" Grid.Row="0" Margin="79,16,0,14" VerticalAlignment="Center" HorizontalAlignment="Left" Width="60" Height="26" ></TextBox>
+
+        <Label Content="Qty" Grid.Row="0" Margin="150,16,0,15" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <TextBox x:Name="txtItemQty" Grid.Row="0" Margin="184,16,0,14" VerticalAlignment="Center" HorizontalAlignment="Left" Width="59" Height="26"></TextBox>
+
+        <Button Content="Next Item"  Grid.Row="0" Margin="309,22,0,21" VerticalAlignment="Center" HorizontalAlignment="Left" Width="65" Click="Button_Click" Height="26"></Button>
+        <Label Content="Item ID" Grid.Row="1" Margin="25,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label Content="Invoice Date" Grid.Row="2" Margin="25,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label Content="Item Name" Grid.Row="3" Margin="25,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label Content="Unit Price" Grid.Row="4" Margin="25,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label Content="Qty" Grid.Row="5" Margin="25,22,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label Content="Total For Each" Grid.Row="6" Margin="25,22,0,10" VerticalAlignment="Center" HorizontalAlignment="Left" Width="88"/>
+
+        <Label x:Name="lblID" Width="100"  Grid.Row="1" Margin="150,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label x:Name="lblDate" Width="100" Grid.Row="2" Margin="150,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label x:Name="lblName" Width="100" Grid.Row="3" Margin="150,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label x:Name="lblPrice" Width="100" Content="" Grid.Row="4" Margin="150,21,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label x:Name="lblQty" Width="100" Grid.Row="5" Margin="150,22,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Label x:Name="lblTotal" Width="100" Grid.Row="6" Margin="150,36,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+
+        <Button Content="Generate Invoice" Grid.Row="7" Margin="280,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="36" Width="104" Click="Button_Click_1"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="248,22,0,21" VerticalAlignment="Center" Width="56" Click="add" Height="26"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,78 @@
+﻿<Page x:Class="Secrets_Application_2019.SearchCustomer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="300"
+	Title="SearchCustomer">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="ID" Width="50" Grid.Row="0" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="Name" Width="50" Grid.Row="1" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="Telephone" Width="100" Grid.Row="2" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="Email" Width="100"  Grid.Row="3" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="Gender"  Width="100" Grid.Row="4" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="Added Date"  Width="100" Grid.Row="5" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+
+
+        </Grid>
+
+        <ListBox x:Name="searchCustomerList" ItemsSource="{Binding}" Grid.Row="1" Grid.Column="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="{Binding Path=customerID}" Width="50" Grid.Row="1" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{Binding Path=name}" Width="100" Grid.Row="2" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{Binding Path=telephone}" Width="100"  Grid.Row="3" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{Binding Path=email}"  Width="100" Grid.Row="4" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{Binding Path=gender}" Width="50" Grid.Row="5" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{Binding Path=addedDate}" Width="50" Grid.Row="6" Margin="10,10,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button Grid.Row="2" Content="Go Home" Width="60" Height="26" Margin="0,13,25,0" VerticalAlignment="Top"  HorizontalAlignment="Right"  Grid.Column="1" Click="Button_Click_1"/>
+
+        <Button Grid.Row="0" Content="Search" Width="60" Height="25" Margin="118,0,0,18" VerticalAlignment="Bottom"  HorizontalAlignment="Left"  Grid.Column="1" Click="Button_Click"/>
+        <TextBlock Text="search by name" Grid.Row="0" Width="82" Height="25" Margin="0,0,20,14" VerticalAlignment="Bottom"  HorizontalAlignment="Right" />
+        <TextBox x:Name="txtSerch" Grid.Row="0" Width="113" Height="25" Margin="0,0,0,18" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Grid.Column="1" />
+        <Button Grid.Row="2" Content="Delete" Height="26" Margin="0,13,90,0" VerticalAlignment="Top"  Grid.Column="1" Click="Button_Click_2" HorizontalAlignment="Right" Width="60"/>
+        <Button Grid.Row="2" Content="Update" Height="26" Margin="0,13,155,0" VerticalAlignment="Top"  Grid.ColumnSpan="2" Click="Button_Click_3" HorizontalAlignment="Right" Width="60"/>
+    </Grid>
+
+</Page>

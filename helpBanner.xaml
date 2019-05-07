@@ -1,0 +1,18 @@
+﻿<Page x:Class="Secrets_Application_2019.helpBanner"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+	Title="helpBanner">
+
+    <Grid Background="#FFFAFCEF">
+        <Image Source="C:\Users\Pubuditha\Desktop\ITP Project 2019\Secrets_Application_2019\Secrets_Application_2019\Images\PicsArt_04-20-03.42.54.jpg" Stretch="Uniform" HorizontalAlignment="Left" Height="146" Margin="201,144,0,0" VerticalAlignment="Top" Width="189" RenderTransformOrigin="1.349,0.448"/>
+        <Label Content="For more details please contact the development team.." HorizontalAlignment="Left" Margin="22,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email - jpubuditha@gmail.com" HorizontalAlignment="Left" Margin="22,125,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Page>

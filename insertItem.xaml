@@ -1,0 +1,69 @@
+﻿<Page x:Class="Secrets_Application_2019.insertItem"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="350"
+	Title="insertItem" HorizontalAlignment="Center">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="107*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+
+            <RowDefinition Height="70*"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"></ColumnDefinition>
+            <ColumnDefinition Width="61*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+
+        <TextBlock Text="Item Image" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Margin="30,48,0,48" VerticalAlignment="Center" Height="16" Width="64"></TextBlock>
+
+        <TextBlock Text="Name" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,9"  VerticalAlignment="Center" Height="24" Width="32"></TextBlock>
+        <TextBlock Text="Category" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,9"  VerticalAlignment="Center" Height="23" Width="48"/>
+        <TextBlock Text="Purchesd Price" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,9"  VerticalAlignment="Center" Height="24" Width="77"></TextBlock>
+        <TextBlock Text="Selling Price" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,8"  VerticalAlignment="Center" Height="24" Width="64"></TextBlock>
+        <TextBlock Text="Availability" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,8"  VerticalAlignment="Center" Height="25" Width="57"></TextBlock>
+        <TextBlock Text="Added Date" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,8"  VerticalAlignment="Center" Height="24" Width="63"></TextBlock>
+        <TextBlock Text="Description" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,9"  VerticalAlignment="Center" Height="24" Width="60"></TextBlock>
+        <TextBlock Text="Size" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,8"  VerticalAlignment="Center" Height="24" Width="21"></TextBlock>
+        <TextBlock Text="Quantity" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,8"  VerticalAlignment="Center" Height="25" Width="46"></TextBlock>
+
+        <Image x:Name="ItemImage" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Height="92" Margin="10,10,0,0" VerticalAlignment="Top" Width="99"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="chose" Width="48" Height="24"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="123,57,12,31" Click="Button_Click" />
+
+        <Label Content=" " x:Name="lblImage" Grid.Column="0" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="30,0,0,21" IsEnabled="False" Height="26" Width="13"></Label>
+
+        <TextBox x:Name="txtName" Width="163"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,9"  VerticalAlignment="Center" Height="24"></TextBox>
+        <TextBox x:Name="txtCategory" Width="163"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,7"  VerticalAlignment="Center" Height="25"></TextBox>
+        <TextBox x:Name="txtPurchesdPrice" Width="163"  Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,9"  VerticalAlignment="Center" Height="24"></TextBox>
+        <TextBox x:Name="txtSellingPrice" Width="163"  Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,7"  VerticalAlignment="Center" Height="25"></TextBox>
+        <TextBox x:Name="txtAddedDate" Width="163"  Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,8"  VerticalAlignment="Center" Height="24"></TextBox>
+        <TextBox x:Name="txtDescription" Width="163"  Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,9"  VerticalAlignment="Center" Height="24"></TextBox>
+        <TextBox x:Name="txtSize" Width="163"  Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,9"  VerticalAlignment="Center" Height="23"></TextBox>
+        <TextBox x:Name="txtQty" Width="163"  Grid.Row="9" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,9"  VerticalAlignment="Center" Height="24"></TextBox>
+        <ComboBox x:Name="availability" Grid.Column="1" HorizontalAlignment="Left" Height="28" Margin="10,0,0,5" Grid.Row="5" VerticalAlignment="Center" Width="108" SelectedIndex="0">
+            <ComboBoxItem Content="Available"  />
+            <ComboBoxItem Content="Not Available"/>
+        </ComboBox>
+
+        <Button x:Name="Clear" Grid.Row="10" Height="20" Width="50" Content="Clear" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,27,19,26" Click="Clear_Click" Grid.Column="1"/>
+
+        <Button x:Name="Insert" Grid.Row="10" Height="20" Width="50" Content="Insert" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,27,74,26" Grid.Column="1" Click="Insert_Click"/>
+    </Grid>
+</Page>

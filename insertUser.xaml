@@ -1,0 +1,65 @@
+﻿<Page x:Class="Secrets_Application_2019.insertUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="350"
+	Title="insertUser">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="19*"></ColumnDefinition>
+                <ColumnDefinition Width="31*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="User Image"  Width="99" Grid.Row="0" Grid.Column="0" Margin="34,64,0,109" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"/>
+            <TextBlock Text="User ID" Width="99" Grid.Row="1" Grid.Column="0" Margin="34,12,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"></TextBlock>
+            <TextBlock Text="User Name" Width="99" Grid.Row="2" Grid.Column="0" Margin="34,12,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"/>
+            <TextBlock Text="Employee Name" Width="99"  Grid.Row="3" Grid.Column="0" Margin="34,12,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"/>
+            <TextBlock Text="Branch"  Width="99" Grid.Row="4" Grid.Column="0" Margin="34,12,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"/>
+            <TextBlock Text="Password" Width="99"  Grid.Row="5" Grid.Column="0" Margin="34,12,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"/>
+            <TextBlock Text="Confirm Password"  Width="99" Grid.Row="6" Grid.Column="0" Margin="34,12,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="16"/>
+
+
+            <TextBox x:Name="txtImage"  Width="172" Grid.Row="0" Grid.Column="1" Margin="10,145,0,26" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Height="18"></TextBox>
+            <TextBox x:Name="txtId"  Width="172" Grid.Row="1" Grid.Column="1" Margin="10,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Height="18"></TextBox>
+            <TextBox x:Name="txtName"  Width="172" Grid.Row="2" Grid.Column="1" Margin="10,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></TextBox>
+            <TextBox x:Name="txtEmployeeName" Width="172" Grid.Row="3" Grid.Column="1" Margin="10,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></TextBox>
+            <TextBox x:Name="txtBranch"  Width="172" Grid.Row="4" Grid.Column="1" Margin="10,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></TextBox>
+            <PasswordBox x:Name="txtpassword" Width="112" Grid.Row="5" Grid.Column="1" Margin="10,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></PasswordBox>
+            <PasswordBox x:Name="txtconfirmpassword"  Width="112" Grid.Row="6" Grid.Column="1" Margin="10,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18"></PasswordBox>
+
+
+            <Image HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="100" Grid.Column="1" Margin="10,0,0,0"/>
+
+            <Image x:Name="userIMage" Grid.Column="1" HorizontalAlignment="Left" Height="120" Margin="10,10,0,0" VerticalAlignment="Top" Width="112"/>
+            <Button Grid.Row="0" Content="Select Image" Width="80" Height="25" Margin="127,105,10,59" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_2" Grid.Column="1" />
+
+
+
+        </Grid>
+
+        <Button Grid.Row="1" Grid.ColumnSpan="2" Content="Cancel" Width="60" Height="25" Margin="230,10,10,15" VerticalAlignment="Center" Click="Button_Click_3" HorizontalAlignment="Center"/>
+        <Button Grid.Row="1" Content="Insert" Width="60" Height="25" Margin="100,10,140,15" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Click="Button_Click_4"/>
+        <Button Grid.Row="1" Content="Clear" Width="60" Height="25" Margin="165,10,75,15" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1" />
+
+    </Grid>
+</Page>
