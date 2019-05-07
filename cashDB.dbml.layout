@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="cashDB">
+  <DataContextMoniker Name="/cashDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b792c76d-d8df-4df4-a2b9-658f6b10e3b6" absoluteBounds="2.625, 2.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/cashDBDataContext/loginTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5957e72a-b3bc-493f-a47d-d6f04227e2a5" absoluteBounds="2.6399999999999997, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5dd3a166-9bd4-4d69-b170-039b1ab50347" absoluteBounds="2.625, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/cashDBDataContext/userDetailsTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef9b1fd3-aeb3-4360-9a32-dfc948c13bbe" absoluteBounds="2.6399999999999997, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7bb9fd42-0862-4328-95b6-bea983b76d5c" absoluteBounds="6.875, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/cashDBDataContext/customerDetailsTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9afee778-65b6-4858-84cf-9229b10eb5c7" absoluteBounds="6.89, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2eeb134d-ca6d-47a6-be28-d98bd471c311" absoluteBounds="4.75, 0.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/cashDBDataContext/itemDetailsTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3a1d8d4-7404-417b-9467-f7ea22037c5e" absoluteBounds="4.765, 0.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9c04ce0-55b9-4e8c-b7d4-65864a68b9de" absoluteBounds="6.875, 2.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/cashDBDataContext/outOfStockDeatilsTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57e845b0-2ead-4e28-84ee-9526d7d311ac" absoluteBounds="6.8900000000000006, 3.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c99b26a-4f92-4f04-b072-490c70de4fd3" absoluteBounds="0.5, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/cashDBDataContext/invoiceTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="263b3083-ac37-4739-8581-a7a10cccef39" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e71b1900-fc85-4bbb-a415-6e204f0c2964" absoluteBounds="4.75, 3.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/cashDBDataContext/DailySalseTB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="786d4ed5-ae58-49e5-91d1-7e91fb4b2cce" absoluteBounds="4.765, 3.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
